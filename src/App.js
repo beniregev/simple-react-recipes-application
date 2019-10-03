@@ -11,18 +11,26 @@ class App extends React.Component {
     this.state = {
       activeUser: null,
     };
+    this.handleLogout = this.handleLogout.bind(this);
   }
+
+  handleLogout() {
+    this.setState({ activeUser: null });
+  }
+  
   render() {
+    const { activeUser } = this.state;
+
     return (
       <Switch>
         <Route exact path="/">
-          <HomePage />
+          <HomePage activeUser={activeUser} handleLogout={this.handleLogout} />
         </Route>
         <Route path="/login">
           <LoginPage />
         </Route>
         <Route path="/recipes">
-          <RecipesPage />
+          <RecipesPage activeUser={activeUser} handleLogout={this.handleLogout} />
         </Route>
       </Switch>
     );

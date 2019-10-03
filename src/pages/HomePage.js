@@ -8,6 +8,7 @@ class HomePage extends React.Component {
     }
 
     render() {
+        
         return (
             <Navbar bg="light" expand="lg">
                 <Navbar.Brand href="#/">Recipe Book</Navbar.Brand>
