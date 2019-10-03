@@ -1,6 +1,6 @@
+import React from 'react';
 
-
-class HomePage extends React.Component {
+export class HomePage extends React.Component {
 
     constructor(props) {
         super(props);
@@ -10,12 +10,11 @@ class HomePage extends React.Component {
     render() {
         
         return (
-            <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#/">Recipe Book</Navbar.Brand>
-                <Navbar.Toggle></Navbar.Toggle>
-            </Navbar>
+            <div>
+                Home Page Component
+            </div>
         );
     }
 }
 
-export default HomePage;
+// export default HomePage;

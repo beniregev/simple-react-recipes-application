@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
-import { LoginPage } from './pages/HomePage';
-import { RecipesPage } from './pages/HomePage';
+import { LoginPage } from './pages/LoginPage';
+import { RecipesPage } from './pages/RecipesPage';
 
 class App extends React.Component {
   constructor(props) {
@@ -17,7 +17,7 @@ class App extends React.Component {
   handleLogout() {
     this.setState({ activeUser: null });
   }
-  
+
   render() {
     const { activeUser } = this.state;
 
