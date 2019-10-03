@@ -9,9 +9,16 @@ class RecipeNavbar extends React.Component {
 
     logout() {
         this.props.handleLogout();
-        this.setState({ redirectToHome: true });
+        if (window.location.pathname !== "/") {
+            this.setState({ redirectToHome: true });
+        }        
     }
 
+    componentDidUpdate() {
+        if (this.state.redirectToHome) {
+            this.setState({ redirectToHome: false });
+        }
+    }
     render() {
         const { activeUser } = this.props;
         const { redirectToHome } = this.state;
