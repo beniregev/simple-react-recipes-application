@@ -1,7 +1,6 @@
 import React from 'react'
 import { Card } from 'react-bootstrap'
 
-
 class RecipeCard extends React.Component {
     constructor(props) {
         super(props);
@@ -14,9 +13,8 @@ class RecipeCard extends React.Component {
                 <Card.Img variant="top" src={recipe.img} />
                 <Card.Body>
                     <Card.Title>{recipe.name}</Card.Title>
-                    <Card.Text>
-                        {recipe.desc}
-                    </Card.Text>
+                    <Card.Subtitle>{recipe.desc}</Card.Subtitle>
+                    <Card.Text>Preperation: {recipe.duration} min</Card.Text>
                 </Card.Body>
             </Card>
         );

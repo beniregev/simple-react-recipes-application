@@ -20,15 +20,6 @@ class RecipeNavbar extends React.Component {
         }
     }
 
-    // // this function in onvoked after every render (but not the first)
-    // componentDidUpdate() {
-    //     if (this.state.redirectToHome) {
-    //         this.setState({redirectToHome: false})
-    //     }
-    // }
-
-    
-
     render() {
         const { activeUser } = this.props;
         const { redirectToHome } = this.state;

@@ -8,6 +8,13 @@
     },
     {
         "id": 2,
+        "fname": "Benny",
+        "lname": "Regev",
+        "email": "benny@regev.com",
+        "pwd": "1969"
+    },
+    {
+        "id": 3,
         "fname": "John",
         "lname": "Doe",
         "email": "john@john.com",

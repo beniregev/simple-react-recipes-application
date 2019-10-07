@@ -66,7 +66,6 @@ class RecipesPage extends React.Component {
                     </Row>
                 </Container>
 
-
                 <Modal show={showModal} onHide={this.closeModal} size="lg">
                     <Modal.Header closeButton>
                         <Modal.Title>New Recipe</Modal.Title>
